@@ -34,7 +34,7 @@ export default function Footer() {
                 alt="GleamWorks Logo"
                 width={178}
                 height={62}
-                className="h-10 w-auto brightness-0 invert"
+                className="h-10 w-auto rounded-lg"
               />
             </Link>
             <p className="text-gray-400 leading-relaxed mb-6">

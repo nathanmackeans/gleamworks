@@ -41,9 +41,7 @@ export default function Navbar() {
               alt="GleamWorks Logo"
               width={178}
               height={62}
-              className={`h-10 w-auto transition-all duration-300 group-hover:scale-105 ${
-                scrolled ? "" : "brightness-0 invert"
-              }`}
+              className="h-10 w-auto rounded-lg transition-all duration-300 group-hover:scale-105"
               priority
             />
           </Link>
