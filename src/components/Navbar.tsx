@@ -72,7 +72,7 @@ export default function Navbar() {
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className={`md:hidden p-2 rounded-lg transition-colors ${
+            className={`md:hidden p-3 rounded-lg transition-colors ${
               scrolled ? "text-dark" : "text-white"
             }`}
           >
@@ -92,7 +92,7 @@ export default function Navbar() {
                 key={link.name}
                 href={link.href}
                 onClick={() => setIsOpen(false)}
-                className="block text-gray-700 font-medium hover:text-primary transition-colors py-2"
+                className="block text-gray-700 font-medium hover:text-primary transition-colors py-3"
               >
                 {link.name}
               </Link>

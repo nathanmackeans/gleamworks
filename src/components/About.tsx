@@ -39,14 +39,14 @@ export default function About() {
   return (
     <section id="about" className="section-padding bg-gray-100">
       <div className="max-w-7xl mx-auto">
-        <div className="grid lg:grid-cols-2 gap-16 items-center">
+        <div className="grid lg:grid-cols-2 gap-8 lg:gap-16 items-center">
           {/* Left: Text content */}
           <div>
             <span className="text-primary font-semibold text-sm uppercase tracking-widest">
               Why Choose Us
             </span>
             <h2
-              className="text-4xl md:text-5xl font-bold text-dark mt-3 mb-6"
+              className="text-3xl sm:text-4xl md:text-5xl font-bold text-dark mt-3 mb-6"
               style={{ fontFamily: "var(--font-playfair)" }}
             >
               Cleaning Excellence,{" "}
@@ -76,12 +76,12 @@ export default function About() {
           </div>
 
           {/* Right: Feature Grid */}
-          <div className="grid grid-cols-2 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
             {features.map((feature, idx) => (
               <div
                 key={feature.title}
-                className={`bg-white rounded-2xl p-6 shadow-sm hover:shadow-lg transition-all duration-300 hover:-translate-y-1 ${
-                  idx % 2 === 1 ? "mt-6" : ""
+                className={`bg-white rounded-2xl p-5 sm:p-6 shadow-sm hover:shadow-lg transition-all duration-300 hover:-translate-y-1 ${
+                  idx % 2 === 1 ? "sm:mt-6" : ""
                 }`}
               >
                 <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-4">

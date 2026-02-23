@@ -108,12 +108,12 @@ export default function Gallery() {
     <section id="gallery" className="section-padding bg-white">
       <div className="max-w-7xl mx-auto">
         {/* Section Header */}
-        <div className="text-center mb-16">
+        <div className="text-center mb-10 md:mb-16">
           <span className="text-primary font-semibold text-sm uppercase tracking-widest">
             Our Results
           </span>
           <h2
-            className="text-4xl md:text-5xl font-bold text-dark mt-3 mb-6"
+            className="text-3xl sm:text-4xl md:text-5xl font-bold text-dark mt-3 mb-6"
             style={{ fontFamily: "var(--font-playfair)" }}
           >
             See the Transformation
@@ -147,7 +147,7 @@ export default function Gallery() {
         </div>
 
         {/* Gallery Grid */}
-        <div className="grid grid-cols-2 gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
           <div className="relative aspect-[4/3] rounded-2xl overflow-hidden group">
             <Image
               src="/images/gallery-1.jpeg"
@@ -156,7 +156,7 @@ export default function Gallery() {
               className="object-cover group-hover:scale-110 transition-transform duration-700"
               sizes="(max-width: 768px) 100vw, 50vw"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+            <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4 sm:p-6">
               <span className="text-white font-semibold">Spotless Results</span>
             </div>
           </div>
@@ -168,7 +168,7 @@ export default function Gallery() {
               className="object-cover group-hover:scale-110 transition-transform duration-700"
               sizes="(max-width: 768px) 100vw, 50vw"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+            <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4 sm:p-6">
               <span className="text-white font-semibold">
                 Premium Cleaning
               </span>

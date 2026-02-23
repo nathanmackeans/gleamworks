@@ -19,14 +19,13 @@ export default function CTA() {
         </div>
 
         <h2
-          className="text-4xl md:text-6xl font-bold text-white mb-6"
+          className="text-3xl sm:text-4xl md:text-6xl font-bold text-white mb-6"
           style={{ fontFamily: "var(--font-playfair)" }}
         >
-          Get 15% Off Your
-          <br />
-          First Clean!
+          Get 15% Off Your{" "}
+          <span className="sm:block">First Clean!</span>
         </h2>
-        <p className="text-xl text-white/80 max-w-2xl mx-auto mb-10">
+        <p className="text-base sm:text-xl text-white/80 max-w-2xl mx-auto mb-8 sm:mb-10">
           Experience the GleamWorks difference. Book your first session today
           and enjoy a special introductory discount.
         </p>

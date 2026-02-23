@@ -7,12 +7,12 @@ export default function Contact() {
     <section id="contact" className="section-padding bg-white">
       <div className="max-w-7xl mx-auto">
         {/* Section Header */}
-        <div className="text-center mb-16">
+        <div className="text-center mb-10 md:mb-16">
           <span className="text-primary font-semibold text-sm uppercase tracking-widest">
             Get In Touch
           </span>
           <h2
-            className="text-4xl md:text-5xl font-bold text-dark mt-3 mb-6"
+            className="text-3xl sm:text-4xl md:text-5xl font-bold text-dark mt-3 mb-6"
             style={{ fontFamily: "var(--font-playfair)" }}
           >
             Ready for a Spotless Space?
@@ -23,9 +23,9 @@ export default function Contact() {
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-12">
+        <div className="grid lg:grid-cols-2 gap-8 lg:gap-12">
           {/* Contact Form */}
-          <div className="bg-gray-50 rounded-3xl p-8 md:p-10">
+          <div className="bg-gray-50 rounded-3xl p-6 sm:p-8 md:p-10">
             <h3 className="text-2xl font-bold text-dark mb-6">
               Send Us a Message
             </h3>

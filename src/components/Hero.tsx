@@ -60,16 +60,15 @@ export default function Hero() {
 
           {/* Heading */}
           <h1
-            className="text-5xl md:text-7xl lg:text-8xl font-bold text-white mb-6 leading-tight"
+            className="text-3xl sm:text-5xl md:text-7xl lg:text-8xl font-bold text-white mb-6 leading-tight"
             style={{ fontFamily: "var(--font-playfair)" }}
           >
-            Where Every Surface
-            <br />
+            Where Every Surface{" "}
             <span className="gradient-text">Shines Bright</span>
           </h1>
 
           {/* Subheading */}
-          <p className="text-xl md:text-2xl text-white/70 max-w-2xl mx-auto mb-10 leading-relaxed">
+          <p className="text-base sm:text-xl md:text-2xl text-white/70 max-w-2xl mx-auto mb-8 sm:mb-10 leading-relaxed">
             Post-construction cleanup, deep cleaning, and move-in/move-out
             services that transform spaces into spotless sanctuaries.
           </p>
@@ -93,14 +92,14 @@ export default function Hero() {
           </div>
 
           {/* Stats */}
-          <div className="grid grid-cols-3 gap-8 mt-16 max-w-lg mx-auto">
+          <div className="grid grid-cols-3 gap-4 sm:gap-8 mt-10 sm:mt-16 max-w-lg mx-auto">
             {[
               { number: "500+", label: "Projects Done" },
               { number: "100%", label: "Satisfaction" },
               { number: "24/7", label: "Available" },
             ].map((stat) => (
               <div key={stat.label} className="text-center">
-                <div className="text-3xl md:text-4xl font-bold text-white mb-1">
+                <div className="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-1">
                   {stat.number}
                 </div>
                 <div className="text-sm text-white/60">{stat.label}</div>

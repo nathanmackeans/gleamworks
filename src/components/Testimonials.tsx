@@ -34,12 +34,12 @@ export default function Testimonials() {
     <section id="testimonials" className="section-padding bg-white">
       <div className="max-w-7xl mx-auto">
         {/* Section Header */}
-        <div className="text-center mb-16">
+        <div className="text-center mb-10 md:mb-16">
           <span className="text-primary font-semibold text-sm uppercase tracking-widest">
             Testimonials
           </span>
           <h2
-            className="text-4xl md:text-5xl font-bold text-dark mt-3 mb-6"
+            className="text-3xl sm:text-4xl md:text-5xl font-bold text-dark mt-3 mb-6"
             style={{ fontFamily: "var(--font-playfair)" }}
           >
             What Our Clients Say
@@ -55,7 +55,7 @@ export default function Testimonials() {
           {testimonials.map((t, idx) => (
             <div
               key={idx}
-              className="bg-gray-50 rounded-3xl p-8 relative group hover:bg-white hover:shadow-xl transition-all duration-500"
+              className="bg-gray-50 rounded-3xl p-6 sm:p-8 relative group hover:bg-white hover:shadow-xl transition-all duration-500"
             >
               {/* Quote Icon */}
               <div className="absolute top-6 right-6 opacity-10 group-hover:opacity-20 transition-opacity">
@@ -73,7 +73,7 @@ export default function Testimonials() {
               </div>
 
               {/* Text */}
-              <p className="text-gray-600 leading-relaxed mb-6 text-lg italic">
+              <p className="text-gray-600 leading-relaxed mb-6 text-base sm:text-lg italic">
                 &ldquo;{t.text}&rdquo;
               </p>
 

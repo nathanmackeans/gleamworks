@@ -40,12 +40,12 @@ export default function HowItWorks() {
 
       <div className="relative z-10 max-w-7xl mx-auto">
         {/* Section Header */}
-        <div className="text-center mb-16">
+        <div className="text-center mb-10 md:mb-16">
           <span className="text-primary-light font-semibold text-sm uppercase tracking-widest">
             Simple Process
           </span>
           <h2
-            className="text-4xl md:text-5xl font-bold text-white mt-3 mb-6"
+            className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mt-3 mb-6"
             style={{ fontFamily: "var(--font-playfair)" }}
           >
             How It Works
@@ -56,7 +56,7 @@ export default function HowItWorks() {
         </div>
 
         {/* Steps */}
-        <div className="grid md:grid-cols-4 gap-8">
+        <div className="grid sm:grid-cols-2 md:grid-cols-4 gap-8">
           {steps.map((item, idx) => (
             <div key={item.step} className="relative text-center group">
               {/* Connector line */}

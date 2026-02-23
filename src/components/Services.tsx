@@ -61,12 +61,12 @@ export default function Services() {
     <section id="services" className="section-padding bg-gray-100">
       <div className="max-w-7xl mx-auto">
         {/* Section Header */}
-        <div className="text-center mb-16">
+        <div className="text-center mb-10 md:mb-16">
           <span className="text-primary font-semibold text-sm uppercase tracking-widest">
             What We Offer
           </span>
           <h2
-            className="text-4xl md:text-5xl font-bold text-dark mt-3 mb-6"
+            className="text-3xl sm:text-4xl md:text-5xl font-bold text-dark mt-3 mb-6"
             style={{ fontFamily: "var(--font-playfair)" }}
           >
             Our Premium Services
@@ -78,11 +78,11 @@ export default function Services() {
         </div>
 
         {/* Service Cards */}
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
           {services.map((service) => (
             <div
               key={service.title}
-              className="group bg-white rounded-3xl p-8 shadow-sm hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 border border-gray-100"
+              className="group bg-white rounded-3xl p-6 sm:p-8 shadow-sm hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 border border-gray-100"
             >
               {/* Icon */}
               <div
