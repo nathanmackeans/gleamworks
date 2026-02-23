@@ -1,0 +1,106 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #0d9488;
+  --color-primary-dark: #0f766e;
+  --color-primary-light: #14b8a6;
+  --color-accent: #f59e0b;
+  --color-accent-dark: #d97706;
+  --color-dark: #0f172a;
+  --color-dark-light: #1e293b;
+  --color-gray-100: #f1f5f9;
+  --color-gray-200: #e2e8f0;
+  --color-gray-300: #cbd5e1;
+  --color-gray-400: #94a3b8;
+  --color-gray-500: #64748b;
+  --color-gray-600: #475569;
+  --color-gray-700: #334155;
+  --color-gray-800: #1e293b;
+  --color-gray-900: #0f172a;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-white text-gray-900 antialiased;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-primary text-white px-8 py-4 rounded-full font-semibold text-lg
+    hover:bg-primary-dark transition-all duration-300 shadow-lg hover:shadow-xl
+    hover:-translate-y-0.5 active:translate-y-0;
+  }
+  .btn-accent {
+    @apply bg-accent text-dark px-8 py-4 rounded-full font-bold text-lg
+    hover:bg-accent-dark transition-all duration-300 shadow-lg hover:shadow-xl
+    hover:-translate-y-0.5 active:translate-y-0;
+  }
+  .btn-outline {
+    @apply border-2 border-white text-white px-8 py-4 rounded-full font-semibold text-lg
+    hover:bg-white hover:text-primary transition-all duration-300;
+  }
+  .section-padding {
+    @apply py-20 md:py-28 px-4 md:px-8;
+  }
+  .glass {
+    @apply bg-white/10 backdrop-blur-md border border-white/20;
+  }
+}
+
+/* WhatsApp floating button animation */
+@keyframes whatsapp-pulse {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.5); }
+  50% { box-shadow: 0 0 0 15px rgba(37, 211, 102, 0); }
+}
+
+.whatsapp-float {
+  animation: whatsapp-pulse 2s infinite;
+}
+
+/* Gradient text */
+.gradient-text {
+  background: linear-gradient(135deg, #0d9488, #14b8a6, #f59e0b);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Before/After slider */
+.before-after-slider {
+  position: relative;
+  overflow: hidden;
+  cursor: ew-resize;
+}
+
+/* Smooth reveal animation */
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.8s ease-out forwards;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+/* Sparkle effect */
+@keyframes sparkle {
+  0%, 100% { opacity: 0; transform: scale(0); }
+  50% { opacity: 1; transform: scale(1); }
+}
+
+.sparkle {
+  animation: sparkle 2s ease-in-out infinite;
+}
