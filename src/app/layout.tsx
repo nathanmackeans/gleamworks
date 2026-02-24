@@ -25,6 +25,11 @@ export const metadata: Metadata = {
     "Delta State",
     "Nigeria",
   ],
+  icons: {
+    icon: "/images/logo.png",
+    shortcut: "/images/logo.png",
+    apple: "/images/logo.png",
+  },
   openGraph: {
     type: "website",
     locale: "en_NG",
@@ -34,18 +39,18 @@ export const metadata: Metadata = {
     description,
     images: [
       {
-        url: "/images/gallery-1.jpeg",
-        width: 864,
-        height: 1080,
-        alt: "GleamWorks Professional Cleaning Services",
+        url: "/images/logo.jpg",
+        width: 178,
+        height: 62,
+        alt: "GleamWorks Logo",
       },
     ],
   },
   twitter: {
-    card: "summary_large_image",
+    card: "summary",
     title,
     description,
-    images: ["/images/gallery-1.jpeg"],
+    images: ["/images/logo.jpg"],
   },
   robots: {
     index: true,
